@@ -7,10 +7,10 @@ function h($str){
 //DB接続
 function db_conn(){
   try {
-    $db_name = 'gs_db5';
-    $db_host = 'localhost';
-    $db_id = 'root';
-    $db_pw = '';
+    $db_name = '*****';
+    $db_host = '*****';
+    $db_id = '*****';
+    $db_pw = '*****';
       return new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host, $db_id, $db_pw);
   } catch (PDOException $e) {
     exit('DB Connection Error:'.$e->getMessage());
